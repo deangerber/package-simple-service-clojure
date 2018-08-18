@@ -1,5 +1,10 @@
 {:paths ["src"]
 
+ :mvn/repos
+ {"central" {:url "http://central.maven.org/maven2/"}
+  "maven" {:url "https://repo1.maven.org/maven2/"}
+  "clojars" {:url "https://clojars.org/repo"}}
+
  :deps
  {org.clojure/clojure {:mvn/version "1.9.0"}
   ring/ring-core {:mvn/version "1.7.0-RC1"}
@@ -11,4 +16,7 @@
          :extra-deps {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git"
                                                  :sha "5fb4fc46ad0bf2e0ce45eba5b9117a2e89166479"}
                       ring/ring-mock {:mvn/version "0.3.2"}}
-         :main-opts ["-m" "cognitect.test-runner"]}}}
+         :main-opts ["-m" "cognitect.test-runner"]}
+  :pack {:extra-deps {pack/pack.alpha {:git/url "https://github.com/juxt/pack.alpha.git"
+                                       :sha     "dccf2134bcf03726a9465d2b9997c42e5cd91bff"}}
+         :jvm-opts ["--add-modules" "java.xml.bind"]}}}
