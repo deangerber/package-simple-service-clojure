@@ -2,7 +2,9 @@
 
  :deps
  {org.clojure/clojure {:mvn/version "1.9.0"}
-  ring/ring-core {:mvn/version "1.7.0-RC1"}}
+  ring/ring-core {:mvn/version "1.7.0-RC1"}
+  ring/ring-servlet {:mvn/version "1.7.0-RC1"}
+  ring/ring-jetty-adapter {:mvn/version "1.7.0-RC1"}}
 
  :aliases
  {:test {:extra-paths ["test"]
