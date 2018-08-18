@@ -53,7 +53,6 @@ make uberjar
 
 ## References
 
-* [The code on Github](https://github.com/deangerber/package-simple-service-clojure)
 * [Java](http://www.oracle.com/technetwork/java/index.html)
 * [Clojure](https://clojure.org/index)
 * [Clojure Deps and CLI Guide](https://clojure.org/guides/deps_and_cli)
